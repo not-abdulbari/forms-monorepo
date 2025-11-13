@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* GitHub & Crimson Palette - Light Mode */
+    --background: 0 0% 96.9%; /* #F7F7F7 - Very light grey */
+    --foreground: 0 0% 13.3%; /* #222222 - Very dark grey for text */
+
+    --card: 0 0% 100%; /* #FFFFFF - Pure white for cards */
+    --card-foreground: 0 0% 13.3%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13.3%;
+
+    --primary: 357 73% 58%; /* #E5484D - Crimson red */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96.9%;
+    --secondary-foreground: 0 0% 13.3%;
+
+    --muted: 210 14% 89%; /* #E1E4E8 - Subtle grey */
+    --muted-foreground: 0 0% 41.6%; /* #6A6A6A - Medium grey */
+
+    --accent: 357 100% 94%; /* #FDE7E8 - Soft blush red */
+    --accent-foreground: 357 73% 45%; /* #DC3545 - Medium red */
+
+    --destructive: 0 84% 58%; /* #EF4444 - Strong red for errors */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 14% 89%; /* #E1E4E8 */
+    --input: 0 0% 100%;
+    --ring: 357 73% 58%;
+
+    --radius: 0.5rem;
+
+    /* Success background (adjusted to red theme for consistency) */
+    --success-bg: 357 100% 94%;
+    --success-text: 357 73% 45%;
+  }
+
+  .dark {
+    /* Obsidian & Crimson Palette - Dark Mode */
+    --background: 0 0% 10.2%; /* #1A1A1A - Very dark grey */
+    --foreground: 0 0% 93.7%; /* #EFEFEF - Soft off-white */
+
+    --card: 0 0% 14.1%; /* #242424 - Slightly lighter grey for cards */
+    --card-foreground: 0 0% 93.7%;
+
+    --popover: 0 0% 14.1%;
+    --popover-foreground: 0 0% 93.7%;
+
+    --primary: 357 73% 58%; /* #E5484D - Strong red accent */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 14.1%;
+    --secondary-foreground: 0 0% 93.7%;
+
+    --muted: 0 0% 20%; /* #333333 - Subtle borders/dividers */
+    --muted-foreground: 0 0% 53.3%; /* #888888 - Medium grey */
+
+    --accent: 357 73% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 73% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%; /* #333333 */
+    --input: 0 0% 14.1%;
+    --ring: 357 73% 58%;
+
+    /* Success colors adjusted for dark mode */
+    --success-bg: 357 73% 20%;
+    --success-text: 357 73% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
