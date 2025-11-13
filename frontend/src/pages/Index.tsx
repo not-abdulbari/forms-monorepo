@@ -273,9 +273,12 @@ const Index = () => {
               />
               <span className="font-semibold">FormFlow</span>
             </div>
-            <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
-              &copy; {new Date().getFullYear()} FormFlow. All rights reserved.
-            </p>
+<div className="copyright">
+        &copy; {new Date().getFullYear()} FormFlow. All rights reserved.
+      </div>
+      <div className="credits">
+        Developed by <strong>Abdul Bari</strong>
+      </div>
           </div>
         </div>
       </footer>
